@@ -1,0 +1,278 @@
+%-------------------------
+% Resume in LaTeX
+% Daniel Sadig
+% Based on: https://github.com/sb2nov/resume
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.55in}
+\addtolength{\textheight}{1.1in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Make generated PDF machine-readable and ATS-parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small #1 & \small #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{
+  \begin{itemize}[leftmargin=0.15in, label={}]
+}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{
+  \begin{itemize}[leftmargin=0.28in]
+}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+% Resume starts here
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Daniel Sadig} \\ \vspace{2pt}
+    \small
+    416-618-4245 $|$
+    \href{mailto:daniel.sadig@gmail.com}{\underline{daniel.sadig@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/daniel-sadig-33b93a197/}
+         {\underline{linkedin.com/in/daniel-sadig}} $|$
+    \href{https://github.com/SadigDaniel}
+         {\underline{github.com/SadigDaniel}} $|$
+    \href{https://sadigdanielportfolio.com/}
+         {\underline{sadigdanielportfolio.com}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Toronto Metropolitan University}{Sep. 2026}
+    {Master of Applied Science (M.A.Sc.) in Machine Learning}{Toronto, ON}
+  \resumeSubheading
+    {Toronto Metropolitan University}{April 2023}
+    {Bachelor of Engineering in Software Engineering, with Distinction}{Toronto, ON}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Machine Learning Research Assistant}{Sep. 2023 -- Present}
+    {Toronto Metropolitan University}{Toronto, ON}
+    \resumeItemListStart
+      \resumeItem{Conduct research in \textbf{certified adversarial robustness}, ensemble learning, randomized smoothing, and convex optimization for deep neural networks.}
+      \resumeItem{Developed \textbf{CEAR}, an ensemble defense combining variable Gaussian augmentation, temperature-scaled distillation, noisy-logit inference, and robust aggregation.}
+      \resumeItem{Extended randomized-smoothing certification to ensemble classifiers and evaluated robustness on \textbf{MNIST, CIFAR-10, and TinyImageNet}.}
+      \resumeItem{Built reproducible training, attack, and verification pipelines using \textbf{Python, PyTorch, TensorFlow, and alpha-beta-CROWN}.}
+      % \resumeItem{Delivered graduate-level instruction on \textbf{k-anonymity, differential privacy, and adversarially robust machine learning}.}
+    \resumeItemListEnd
+    \resumeSubheading
+        {Graduate Course Instructor}{Sep. 2024 -- April 2025}
+        {Toronto Metropolitan University}{Toronto, ON}
+        \resumeItemListStart
+        \resumeItem{Taught and supported a \textbf{master's-level Machine Learning course}, delivering instruction on core machine learning concepts and trustworthy artificial intelligence.}
+        \resumeItem{Developed graduate-level course material on \textbf{differential privacy}, including privacy guarantees, noise mechanisms, and privacy-preserving machine learning.}
+        \resumeItem{Created instructional material on \textbf{adversarial attacks} against deep neural networks, including methods for generating and evaluating adversarial examples.}
+        \resumeItem{Designed course content covering \textbf{AI defense mechanisms}, including adversarial training, randomized smoothing, certified robustness, and other techniques for improving model security and reliability.}
+        \resumeItem{Communicated advanced machine learning and AI security concepts through lectures, technical examples, and practical demonstrations for graduate students.}
+    \resumeItemListEnd
+  \resumeSubheading
+    {Full-Stack Developer Intern}{Jan. 2022 -- Aug. 2022}
+    {Rogers Communications}{Brampton, ON}
+    \resumeItemListStart
+      \resumeItem{Developed features for web and mobile platforms using \textbf{React.js, React Native, and TypeScript}, improving workflows for laboratory technicians.}
+      \resumeItem{Automated and streamlined recurring tasks, reducing technician completion time by \textbf{more than two hours per day}.}
+      \resumeItem{Built \textbf{RESTful APIs} with \textbf{Java and Spring Boot} to retrieve backend data and reliably populate internal databases.}
+      \resumeItem{Mentored incoming team members on feature development, API integration, and internal development workflows.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Robotic Process Automation Developer Intern}{May 2021 -- Dec. 2021}
+    {Royal Bank of Canada (RBC)}{Toronto, ON}
+    \resumeItemListStart
+      \resumeItem{Created a \textbf{Python and Selenium} automation tool for application assessments, reducing manual testing time by \textbf{85\%}, from eight hours to one hour per week.}
+      \resumeItem{Developed \textbf{Ansible} scripts to deploy multi-tier applications across RBC infrastructure.}
+      \resumeItem{Integrated \textbf{Jenkins, Jira, and UrbanCode Deploy} to automate deployment workflows and improve release consistency.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS AND PRESENTATIONS-----------
+\section{Selected Publications \& Presentations}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{\href{https://github.com/SadigDaniel/SOCP-Verifier}
+{Certified Robustness via Sparse Second-Order Cone Relaxations}}}
+{Submitted to AISTATS, 2027}
+
+\resumeProjectHeading
+{\textbf{\href{https://proceedings.mlr.press/v318/sadig26a.html}
+{CEAR: Certified Ensemble Adversarial Robustness in DNNs}}}
+{Canadian AI 2026}
+\resumeItemListStart
+\resumeItem{\textbf{D. Sadig}, M. Maleki, H. Karimi, and R. Samavi. \textit{Proceedings of Machine Learning Research}, vol. 318, pp. 624--635, 2026.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{\href{https://github.com/SadigDaniel/SOCP/tree/main}
+{CoRe-CROWN: Conic-Regularized Certified Robust Training}}}
+{Submitted to AAAI, 2026}
+
+\resumeProjectHeading
+{\textbf{\href{https://assets.pubpub.org/z200o9ps/Sadig-01716796814769.pdf}
+{Certified Robustness Guarantee for Ensemble Networks}}}
+{Canadian AI 2024}
+\resumeItemListStart
+\resumeItem{\textbf{D. Sadig} and R. Samavi. \textit{37th Canadian Conference on Artificial Intelligence}, 2024.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{\href{https://www.linkedin.com/feed/update/urn:li:activity:7220118574781095939/}
+{Robustness Guarantee for Hybrid Empirical and Certified Methods}}}
+{Vector Workshop Poster, 2024}
+
+\resumeSubHeadingListEnd
+
+
+%-----------AWARDS & ACADEMIC DISTINCTIONS-----------
+\section{Awards \& Academic Distinctions}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{Governor General's Gold Medal -- Nominee} (Award to be determined)}{2026}
+
+\resumeProjectHeading {\textbf{TMU Graduate Fellowship Award}, Toronto Metropolitan University}{2023 -- 2026}
+
+
+\resumeProjectHeading
+{\textbf{Entrance Scholarship}, Ryerson University}{2019 -- 2023}
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Selected Projects}
+\resumeSubHeadingListStart
+
+ \resumeProjectHeading
+{\textbf{\href{https://github.com/SadigDaniel}
+{CoRe-CROWN: Conic-Regularized Certified Robust Training}}}
+{Python, PyTorch, Convex Optimization, LP, SOCP}
+
+\resumeItemListStart
+
+\resumeItem{Developed a \textbf{Dual-CROWN certified-training objective} that combines dual linear-programming (LP) relaxations with $\alpha$-CROWN-style bound optimization for provably robust neural network training.}
+
+\resumeItem{Integrated \textbf{Dual-CROWN bound propagation} with a sparse \textbf{second-order cone programming (SOCP) regularizer} to strengthen the underlying convex relaxation.}
+
+\resumeItem{Applied SOCP constraints selectively to intermediate feature representations, tightening robustness bounds while avoiding the computational cost of full SOCP-based training.}
+
+\resumeItem{Evaluated trained models using \textbf{clean accuracy}, \textbf{PGD adversarial robustness}, and \textbf{complete neural-network verification} with $\alpha$-$\beta$-CROWN.}
+
+\resumeItem{Co-authored to the theoretical formulation and implementation of the SOCP regularization framework; manuscript submitted to \textbf{AAAI}.}
+
+\resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{\href{https://github.com/SadigDaniel/SOCP-Verifier}
+    {SOCP Neural Network Verifier}}}
+    {Python, PyTorch, Convex Optimization}
+    \resumeItemListStart
+      \resumeItem{Extended an existing LP-based neural-network verification framework into an \textbf{SOCP verifier} for certifying feed-forward networks against bounded adversarial perturbations.}
+      \resumeItem{Implemented layer-wise bounds, adversarial margin constraints, and solver-based certification experiments for MNIST classifiers.}
+      \resumeItem{Contributed to the theoretical formulation and implementation of the SOCP verifier framework; manuscript submitted to \textbf{NEURIPS}.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{\href{https://github.com/SadigDaniel/ML_AI-Code--Python-/tree/main/NLP\%20Spam\%20Detection}
+    {Email Spam Detection}}}
+    {Python, PyTorch, LSTM, PostgreSQL, Docker}
+    \resumeItemListStart
+      \resumeItem{Developed an email classification system using a stacked \textbf{LSTM} network to identify spam messages from sequential text features.}
+      \resumeItem{Containerized the application with \textbf{Docker} and integrated \textbf{PostgreSQL} for storing messages, predictions, and classification results.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{\href{https://github.com/SadigDaniel/ML_AI-Code--Python-/tree/main/QuestionAndAnswer}
+    {Question-and-Answer System}}}
+    {DistilBERT, Bidirectional GRU}
+    \resumeItemListStart
+      \resumeItem{Built a natural-language question-answering system using \textbf{DistilBERT embeddings} and a \textbf{bidirectional GRU} to model contextual relationships between questions and candidate answers.}
+      \resumeItem{Implemented semantic matching to rank and return the answer most relevant to a user-provided question.}
+    \resumeItemListEnd
+
+  % \resumeProjectHeading
+  %   {\textbf{\href{https://github.com/SadigDaniel/GRPC}
+  %   {Mine Defusal Distributed Application}}}
+  %   {Python, gRPC}
+
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Languages}{: Python, Java, SQL, JavaScript, TypeScript, HTML/CSS} \\
+    \textbf{Machine Learning}{: PyTorch, TensorFlow, Keras, BERT, ResNet, LLMs, adversarial machine learning, randomized smoothing} \\
+    \textbf{Verification \& Optimization}{: CROWN, Dual-CROWN, alpha-beta-CROWN, convex relaxation, SOCP, differential privacy} \\
+    \textbf{Web \& Backend}{: React.js, React Native, Node.js, Spring Boot, REST APIs, gRPC} \\
+    \textbf{Cloud \& DevOps}{: AWS, Azure, Google Cloud, Docker, Git, Jenkins, Jira, Ansible, UrbanCode Deploy}
+  }}
+\end{itemize}
+
+\end{document}
