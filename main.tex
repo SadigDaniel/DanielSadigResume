@@ -213,59 +213,36 @@
 %-----------PROJECTS-----------
 \section{Selected ML \& Security Projects}
 \resumeSubHeadingListStart
-
- \resumeProjectHeading
-{\textbf{\href{https://github.com/SadigDaniel}
-{CoRe-CROWN: Conic-Regularized Certified Robust Training}}}
-{Python, PyTorch, Convex Optimization, LP, SOCP}
-
-\resumeItemListStart
-
-\resumeItem{Developed a \textbf{Dual-CROWN certified-training objective} combining LP relaxations and bound optimization to improve robustness guarantees for deep networks.}
-
-\resumeItem{Integrated \textbf{Dual-CROWN bound propagation} with a sparse \textbf{second-order cone programming (SOCP) regularizer} to strengthen the underlying convex relaxation.}
-
-\resumeItem{Applied SOCP constraints selectively to intermediate feature representations, tightening robustness bounds while avoiding the computational cost of full SOCP-based training.}
-
-\resumeItem{Evaluated \textbf{PGD attack success, clean accuracy, and certified robustness} against $\alpha$-$\beta$-CROWN baselines, investigating trade-offs between defense strength and computation.}
-
-\resumeItem{Contributed to the mathematical formulation and implementation of the SOCP regularization framework; manuscript submitted to \textbf{AISTATS}.}
-
-\resumeItemListEnd
-
   \resumeProjectHeading
-    {\textbf{\href{https://github.com/SadigDaniel/SOCP-Verifier}
-    {SOCP Neural Network Verifier}}}
-    {Python, PyTorch, Convex Optimization}
+    {\textbf{\href{https://github.com/SadigDaniel/ML_AI-Code--Python-/tree/main/Logistic\%20regresion}{Ad Click Prediction}}}
+    {Python, scikit-learn, pandas}
     \resumeItemListStart
-      \resumeItem{Built a \textbf{neural-network robustness verifier} using sparse SOCP relaxations to assess whether adversarial perturbations can change model predictions.}
-      \resumeItem{Implemented adversarial margin constraints, layer-wise bounds, and solver-based evaluations to identify \textbf{certified-safe versus unresolved model behaviors}.}
-      \resumeItem{Contributed to the theoretical formulation and implementation of the SOCP verifier; related manuscript submitted to \textbf{AISTATS 2027}.}
-    \resumeItemListEnd
-
-    \resumeProjectHeading
-    {\textbf{\href{https://github.com/SadigDaniel/ML_AI-Code--Python-/tree/main/NLP\%20Spam\%20Detection}
-    {Email Spam Detection}}}
-    {Python, PyTorch, LSTM, PostgreSQL, Docker}
-    \resumeItemListStart
-      \resumeItem{Developed an email classification system using a stacked \textbf{LSTM} network to identify spam messages from sequential text features.}
-      \resumeItem{Containerized the application with \textbf{Docker} and integrated \textbf{PostgreSQL} for storing messages, predictions, and classification results.}
+      \resumeItem{Built a logistic regression baseline to predict ad clicks from features including time on site and daily internet usage. On 600 held-out synthetic examples, the model achieved \textbf{93\% precision and 85\% recall} for clicks.}
     \resumeItemListEnd
 
   \resumeProjectHeading
-    {\textbf{\href{https://github.com/SadigDaniel/ML_AI-Code--Python-/tree/main/QuestionAndAnswer}
-    {Question-and-Answer System}}}
-    {DistilBERT, Bidirectional GRU}
+    {\textbf{\href{https://github.com/SadigDaniel/SOCP}{CoRe-CROWN: Conic-Regularized Certified Robust Training}}}
+    {Python, PyTorch}
     \resumeItemListStart
-      \resumeItem{Built a natural-language question-answering system using \textbf{DistilBERT embeddings} and a \textbf{bidirectional GRU} to model contextual relationships between questions and candidate answers.}
-      \resumeItem{Implemented semantic matching to rank and return the answer most relevant to a user-provided question.}
+      \resumeItem{Designed the \textbf{Dual-CROWN training objective} and co-developed a sparse regularizer based on second-order cone constraints to account for interactions between neurons during training.}
+      \resumeItem{Compared trained models on clean accuracy, accuracy under adversarial attack, and certified accuracy to measure how training affected both prediction quality and robustness.}
     \resumeItemListEnd
 
-  % \resumeProjectHeading
-  %   {\textbf{\href{https://github.com/SadigDaniel/GRPC}
-  %   {Mine Defusal Distributed Application}}}
-  %   {Python, gRPC}
+  \resumeProjectHeading
+    {\textbf{\href{https://github.com/SadigDaniel/SOCP-Verifier}{SOCP Neural Network Verifier}}}
+    {Python, PyTorch, CVXPY}
+    \resumeItemListStart
+      \resumeItem{Co-developed a verifier that loads a trained classifier and bounds how much a competing class can outscore the correct class when inputs are perturbed.}
+      \resumeItem{Limited the number of neuron pairs modeled per layer to control solver cost. Benchmarked verification time and certified accuracy against $\alpha$-$\beta$-CROWN on MNIST and CIFAR-10.}
+    \resumeItemListEnd
 
+  \resumeProjectHeading
+    {\textbf{\href{https://github.com/SadigDaniel/GRPC}{Distributed Rover Simulation}}}
+    {Python, gRPC, Protocol Buffers, RabbitMQ}
+    \resumeItemListStart
+      \resumeItem{Implemented gRPC services for maps and rover commands. A \textbf{10-thread pool} handled requests while a separate thread consumed worker results.}
+      \resumeItem{Used RabbitMQ queues to dispatch mine-defusal tasks and return results, allowing rover navigation and defusal work to proceed independently.}
+    \resumeItemListEnd
 \resumeSubHeadingListEnd
 
 %-----------TECHNICAL SKILLS-----------
