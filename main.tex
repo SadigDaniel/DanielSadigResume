@@ -99,7 +99,7 @@
 
 %-----------RESEARCH PROFILE-----------
 \section{Professional Profile}
-\small{Machine learning researcher and software developer with a master's degree and 16 months of industry experience at RBC and Rogers. First author of CEAR, a probabilistic ensemble method for image classification. Built Python pipelines for model training and evaluation, including an ad-click prediction benchmark. Interested in how advertising teams measure prediction quality and serve models efficiently across distributed systems.}
+\small{Software engineer and machine learning researcher with a 2026 MASc, a graduate GPA of 4.07/4.33, and 16 months of industry experience at RBC and Rogers. Experienced in Python, PyTorch, backend APIs, and web and mobile development. Built reproducible model evaluation pipelines and researched neural-network reliability and adversarial robustness. Interested in developing dependable LLM applications and AI agents that support people in critical workflows.}
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -120,22 +120,20 @@
     {Machine Learning Research Assistant}{Sep. 2023 -- Present}
     {Toronto Metropolitan University}{Toronto, ON}
     \resumeItemListStart
-      \resumeItem{Research \textbf{adversarial machine learning and AI safety}, developing and evaluating defenses against adversarial input perturbations and studying failure modes of neural networks.}
+      \resumeItem{Implemented reproducible \textbf{model training, attack generation, and evaluation pipelines} in Python, PyTorch, and TensorFlow across MNIST, CIFAR-10, and Tiny ImageNet.}
       \resumeItem{Developed \textbf{CEAR}, a peer-reviewed ensemble defense combining Gaussian augmentation, knowledge distillation, and randomized smoothing to improve certified adversarial robustness.}
-      \resumeItem{Designed \textbf{adversarial evaluations} across MNIST, CIFAR-10, and Tiny ImageNet, measuring clean accuracy, certified accuracy, and robustness under bounded perturbations.}
-      \resumeItem{Implemented reproducible \textbf{model training, attack generation, and robustness evaluation} in Python, PyTorch, and TensorFlow; compared empirical attacks with formal certification.}
-      % \resumeItem{Delivered graduate-level instruction on \textbf{k-anonymity, differential privacy, and adversarially robust machine learning}.}
+      \resumeItem{Designed controlled \textbf{adversarial evaluations} to investigate model failure modes, measuring clean accuracy, accuracy under attack, and certified robustness under bounded input perturbations.}
+      \resumeItem{Benchmarked \textbf{inference runtime and robustness} against randomized smoothing and ensemble baselines, examining trade-offs between prediction quality and computational cost.}
     \resumeItemListEnd
-    \resumeSubheading
-        {Graduate Course Instructor}{Sep. 2024 -- April 2025}
-        {Toronto Metropolitan University}{Toronto, ON}
-        \resumeItemListStart
-        \resumeItem{Designed and taught graduate-level \textbf{Secure Machine Learning}, covering adversarial attacks and defenses, privacy risks, threat models, and model reliability.}
-        \resumeItem{Developed graduate-level course material on \textbf{differential privacy}, including privacy guarantees, noise mechanisms, and privacy-preserving machine learning.}
-        \resumeItem{Created hands-on demonstrations for \textbf{adversarial attack generation, defense evaluation, and robustness testing}.}
-        \resumeItem{Explained \textbf{adversarial training, randomized smoothing, and certified robustness} as approaches to measuring and improving model reliability.}
-        \resumeItem{Communicated complex \textbf{AI safety and security concepts} through lectures, practical demonstrations, and technical explanations for graduate students.}
+
+  \resumeSubheading
+    {Graduate Course Instructor}{Sep. 2024 -- April 2025}
+    {Toronto Metropolitan University}{Toronto, ON}
+    \resumeItemListStart
+      \resumeItem{Co-designed and delivered graduate-level \textbf{Secure Machine Learning}, creating hands-on demonstrations of adversarial attacks, defense evaluation, and model reliability.}
+      \resumeItem{Communicated complex ML security and privacy concepts through lectures and practical examples, helping graduate students interpret evaluation results and understand method limitations.}
     \resumeItemListEnd
+
   \resumeSubheading
     {Full-Stack Developer Intern}{Jan. 2022 -- Aug. 2022}
     {Rogers Communications}{Brampton, ON}
@@ -156,6 +154,8 @@
     \resumeItemListEnd
 
 \resumeSubHeadingListEnd
+
+\newpage
 
 %-----------PUBLICATIONS AND PRESENTATIONS-----------
 \section{Selected Publications \& Research Presentations}
@@ -214,13 +214,6 @@
 \section{Selected ML \& Security Projects}
 \resumeSubHeadingListStart
   \resumeProjectHeading
-    {\textbf{\href{https://github.com/SadigDaniel/ML_AI-Code--Python-/tree/main/Logistic\%20regresion}{Ad Click Prediction}}}
-    {Python, scikit-learn, pandas}
-    \resumeItemListStart
-      \resumeItem{Built a logistic regression baseline to predict ad clicks from features including time on site and daily internet usage. On 600 held-out synthetic examples, the model achieved \textbf{93\% precision and 85\% recall} for clicks.}
-    \resumeItemListEnd
-
-  \resumeProjectHeading
     {\textbf{\href{https://github.com/SadigDaniel/SOCP}{CoRe-CROWN: Conic-Regularized Certified Robust Training}}}
     {Python, PyTorch}
     \resumeItemListStart
@@ -237,6 +230,14 @@
     \resumeItemListEnd
 
   \resumeProjectHeading
+    {\textbf{\href{https://github.com/SadigDaniel/ML_AI-Code--Python-/tree/main/QuestionAndAnswer}{DistilBERT Question Answering}}}
+    {Python, PyTorch, Hugging Face Transformers}
+    \resumeItemListStart
+      \resumeItem{Built an \textbf{extractive question-answering system} using DistilBERT and a bidirectional GRU to predict answer spans from question--passage pairs.}
+      \resumeItem{Used \textbf{Hugging Face Transformers} for tokenization and model loading, with SQuAD data preprocessing and validation of predicted answer positions.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
     {\textbf{\href{https://github.com/SadigDaniel/GRPC}{Distributed Rover Simulation}}}
     {Python, gRPC, Protocol Buffers, RabbitMQ}
     \resumeItemListStart
@@ -250,7 +251,7 @@
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
     \textbf{Languages}{: Python, Java, SQL, JavaScript, TypeScript, HTML/CSS} \\
-    \textbf{Machine Learning}{: PyTorch, TensorFlow, Keras, deep learning, CNNs, ResNets, BERT, LSTMs, classification, model evaluation} \\
+    \textbf{Machine Learning}{: PyTorch, Hugging Face Transformers, TensorFlow, Keras, deep learning, CNNs, ResNets, BERT/DistilBERT, LSTMs, classification, model evaluation} \\
     \textbf{AI Safety \& Security}{: adversarial ML, PGD attacks, adversarial defenses, certified robustness, threat models, differential privacy, neural-network verification} \\
     \textbf{Optimization}{: CROWN, Dual-CROWN, alpha-beta-CROWN, LP/SOCP relaxations} \\
     \textbf{Web \& Backend}{: React.js, React Native, Node.js, Spring Boot, REST APIs, gRPC} \\
