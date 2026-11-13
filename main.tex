@@ -99,7 +99,7 @@
 
 %-----------RESEARCH PROFILE-----------
 \section{Professional Profile}
-\small{Software engineer and machine learning researcher with a 2026 MASc, a graduate GPA of 4.07/4.33, and 16 months of industry experience at RBC and Rogers. Experienced in Python, PyTorch, backend APIs, and web and mobile development. Built reproducible model evaluation pipelines and researched neural-network reliability and adversarial robustness. Interested in developing dependable LLM applications and AI agents that support people in critical workflows.}
+\small{Software developer and machine learning researcher with 16 months of industry experience at RBC and Rogers, a 2026 MASc, and a graduate GPA of 4.07/4.33. Experienced in TypeScript, React, and React Native frontend development, Java/Spring Boot and JavaScript/Node.js backend APIs, and Python-based ML pipelines and automation. Built tools that improved operational workflows and reduced manual testing. Interested in developing reliable software that improves consumer search and shopping experiences.}
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -120,7 +120,7 @@
     {Machine Learning Research Assistant}{Sep. 2023 -- Present}
     {Toronto Metropolitan University}{Toronto, ON}
     \resumeItemListStart
-      \resumeItem{Implemented reproducible \textbf{model training, attack generation, and evaluation pipelines} in Python, PyTorch, and TensorFlow across MNIST, CIFAR-10, and Tiny ImageNet.}
+      \resumeItem{Developed and debugged \textbf{Python pipelines} for model training, attack generation, and evaluation using PyTorch and TensorFlow across MNIST, CIFAR-10, and Tiny ImageNet.}
       \resumeItem{Developed \textbf{CEAR}, a peer-reviewed ensemble defense combining Gaussian augmentation, knowledge distillation, and randomized smoothing to improve certified adversarial robustness.}
       \resumeItem{Designed controlled \textbf{adversarial evaluations} to investigate model failure modes, measuring clean accuracy, accuracy under attack, and certified robustness under bounded input perturbations.}
       \resumeItem{Benchmarked \textbf{inference runtime and robustness} against randomized smoothing and ensemble baselines, examining trade-offs between prediction quality and computational cost.}
@@ -138,18 +138,18 @@
     {Full-Stack Developer Intern}{Jan. 2022 -- Aug. 2022}
     {Rogers Communications}{Brampton, ON}
     \resumeItemListStart
-      \resumeItem{Developed features for web and mobile platforms using \textbf{React.js, React Native, and TypeScript}, improving workflows for laboratory technicians.}
-      \resumeItem{Automated and streamlined recurring tasks, reducing technician completion time by \textbf{more than two hours per day}.}
-      \resumeItem{Built \textbf{RESTful APIs} with \textbf{Java and Spring Boot} to retrieve backend data and reliably populate internal databases.}
-      \resumeItem{Mentored incoming team members on feature development, API integration, and internal development workflows.}
+      \resumeItem{Developed web interfaces in \textbf{React} and mobile application features in \textbf{React Native} using \textbf{TypeScript}, improving workflows for laboratory technicians.}
+      \resumeItem{Built \textbf{RESTful APIs with Java and Spring Boot} to retrieve backend data and populate internal databases.}
+      \resumeItem{Automated recurring workflows, reducing technician completion time by \textbf{more than two hours per day}.}
+      \resumeItem{Mentored incoming developers on feature development, API integration, and internal development workflows.}
     \resumeItemListEnd
 
   \resumeSubheading
     {Robotic Process Automation Developer Intern}{May 2021 -- Dec. 2021}
     {Royal Bank of Canada (RBC)}{Toronto, ON}
     \resumeItemListStart
-      \resumeItem{Created a \textbf{Python and Selenium} automation tool for application assessments, reducing manual testing time by \textbf{85\%}, from eight hours to one hour per week.}
-      \resumeItem{Developed \textbf{Ansible} scripts to deploy multi-tier applications across RBC infrastructure.}
+      \resumeItem{Automated application assessments using \textbf{Python and Selenium}, reducing manual testing from \textbf{eight hours to one hour per week}.}
+      \resumeItem{Developed \textbf{Ansible deployment scripts} for multi-tier applications across RBC infrastructure.}
       \resumeItem{Integrated \textbf{Jenkins, Jira, and UrbanCode Deploy} to automate deployment workflows and improve release consistency.}
     \resumeItemListEnd
 
@@ -230,19 +230,19 @@
     \resumeItemListEnd
 
   \resumeProjectHeading
-    {\textbf{\href{https://github.com/SadigDaniel/ML_AI-Code--Python-/tree/main/QuestionAndAnswer}{DistilBERT Question Answering}}}
-    {Python, PyTorch, Hugging Face Transformers}
-    \resumeItemListStart
-      \resumeItem{Built an \textbf{extractive question-answering system} using DistilBERT and a bidirectional GRU to predict answer spans from question--passage pairs.}
-      \resumeItem{Used \textbf{Hugging Face Transformers} for tokenization and model loading, with SQuAD data preprocessing and validation of predicted answer positions.}
-    \resumeItemListEnd
-
-  \resumeProjectHeading
     {\textbf{\href{https://github.com/SadigDaniel/GRPC}{Distributed Rover Simulation}}}
     {Python, gRPC, Protocol Buffers, RabbitMQ}
     \resumeItemListStart
       \resumeItem{Implemented gRPC services for maps and rover commands. A \textbf{10-thread pool} handled requests while a separate thread consumed worker results.}
       \resumeItem{Used RabbitMQ queues to dispatch mine-defusal tasks and return results, allowing rover navigation and defusal work to proceed independently.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{\href{https://github.com/coe70A/patient-booking-app-backend}{Patient Appointment Booking App (PAA)}}}
+    {TypeScript, JavaScript, PostgreSQL, AWS}
+    \resumeItemListStart
+      \resumeItem{Co-developed an appointment booking app with a \textbf{TypeScript frontend}, \textbf{JavaScript/Node.js Express APIs}, and \textbf{PostgreSQL} for patient/doctor registration and appointment management.}
+      \resumeItem{Used a \textbf{microservices architecture}, containerized services with \textbf{Docker}, and deployed the application on \textbf{AWS} using \textbf{Kubernetes}.}
     \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -250,12 +250,13 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-    \textbf{Languages}{: Python, Java, SQL, JavaScript, TypeScript, HTML/CSS} \\
-    \textbf{Machine Learning}{: PyTorch, Hugging Face Transformers, TensorFlow, Keras, deep learning, CNNs, ResNets, BERT/DistilBERT, LSTMs, classification, model evaluation} \\
-    \textbf{AI Safety \& Security}{: adversarial ML, PGD attacks, adversarial defenses, certified robustness, threat models, differential privacy, neural-network verification} \\
-    \textbf{Optimization}{: CROWN, Dual-CROWN, alpha-beta-CROWN, LP/SOCP relaxations} \\
-    \textbf{Web \& Backend}{: React.js, React Native, Node.js, Spring Boot, REST APIs, gRPC} \\
-    \textbf{Cloud \& DevOps}{: AWS, Azure, Google Cloud, Docker, Git, Jenkins, Jira, Ansible, UrbanCode Deploy}
+    \textbf{Languages}{: TypeScript, JavaScript, Python, Java, SQL, HTML/CSS} \\
+    \textbf{Frontend}{: React, React Native} \\
+    \textbf{Backend \& Data}{: Node.js, Express, Spring Boot, REST APIs, PostgreSQL, gRPC, microservices} \\
+    \textbf{Cloud \& DevOps}{: AWS, Docker, Kubernetes, Azure, Google Cloud, Git, Jenkins, Ansible, UrbanCode Deploy} \\
+    \textbf{Machine Learning}{: PyTorch, Hugging Face Transformers, TensorFlow, Keras, CNNs, ResNets, BERT/DistilBERT, LSTMs, model evaluation} \\
+    \textbf{AI Safety \& Security}{: adversarial ML, PGD attacks, certified robustness, threat models, differential privacy, neural-network verification} \\
+    \textbf{Optimization}{: CROWN, Dual-CROWN, alpha-beta-CROWN, LP/SOCP relaxations}
   }}
 \end{itemize}
 
