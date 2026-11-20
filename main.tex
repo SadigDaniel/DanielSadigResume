@@ -99,7 +99,7 @@
 
 %-----------RESEARCH PROFILE-----------
 \section{Professional Profile}
-\small{Machine learning researcher and software engineer with a 2026 MASc specializing in \textbf{adversarial robustness, neural-network verification, and threat-driven model evaluation}. Developed novel learning objectives, optimization-based verifiers, and reproducible experimental pipelines in \textbf{Python and PyTorch}, supported by research publications and open-source implementations. Experience spans transformer-based question answering and distributed, event-driven applications; currently exploring \textbf{Qwen and linear programming relaxations for LLM robustness}. Interested in verifying the reliability of \textbf{untrusted ML training and inference} through rigorous evaluation and efficient verification systems.}
+\small{Machine learning researcher and software engineer with a 2026 MASc specializing in \textbf{AI safety, adversarial robustness, and neural-network verification}. Developed novel certified-training objectives, optimization-based verifiers, and reproducible \textbf{Python/PyTorch} research pipelines, with peer-reviewed publications and open-source implementations. Experienced in designing attacks, evaluating defenses, and benchmarking robustness against established baselines. Currently exploring \textbf{Qwen and optimization-based verification for LLM robustness}, with a strong interest in frontier-model evaluations, red-teaming, and scalable AI safety research.}
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -120,9 +120,9 @@
     {Machine Learning Research Assistant}{Sep. 2023 -- Present}
     {Toronto Metropolitan University}{Toronto, ON}
     \resumeItemListStart
-      \resumeItem{Developed, debugged, and maintained \textbf{Python research pipelines} for model training, attack generation, and evaluation using PyTorch and TensorFlow across MNIST, CIFAR-10, and Tiny ImageNet.}
+      \resumeItem{Developed and maintained reproducible \textbf{Python/PyTorch research pipelines} for model training, adversarial attack generation, defense evaluation, and benchmarking across MNIST, CIFAR-10, and Tiny ImageNet.}
       \resumeItem{Developed \textbf{CEAR}, a peer-reviewed ensemble defense combining Gaussian augmentation, knowledge distillation, and randomized smoothing to improve certified adversarial robustness.}
-      \resumeItem{Defined bounded-perturbation \textbf{adversarial threat models} and evaluated model failure modes, comparing empirical attack outcomes with formal robustness certificates and established baselines.}
+      \resumeItem{Designed \textbf{adversarial evaluations} under bounded-perturbation threat models, analyzed failure modes, and compared empirical attack outcomes with formal robustness certificates and established baselines.}
       \resumeItem{Benchmarked \textbf{verification and inference runtime, attack outcomes, and robustness} against established baselines, documenting trade-offs between reliability, computational cost, and certificate strength.}
     \resumeItemListEnd
 
@@ -219,14 +219,14 @@
     {Python, PyTorch}
     \resumeItemListStart
       \resumeItem{Designed the \textbf{Dual-CROWN training objective} and co-developed a sparse regularizer based on second-order cone constraints to account for interactions between neurons during training.}
-      \resumeItem{Compared trained models on clean accuracy, accuracy under adversarial attack, and certified accuracy to measure how training affected both prediction quality and robustness.}
+      \resumeItem{Ran controlled experiments comparing \textbf{clean, adversarial, and certified accuracy} across training methods to assess defense effectiveness and robustness trade-offs.}
     \resumeItemListEnd
 
   \resumeProjectHeading
     {\textbf{\href{https://github.com/SadigDaniel/SOCP-Verifier}{SOCP Neural Network Verifier}}}
     {Python, PyTorch, CVXPY}
     \resumeItemListStart
-      \resumeItem{Co-developed a verifier that loads a trained classifier and bounds how much a competing class can outscore the correct class when inputs are perturbed.}
+      \resumeItem{Co-developed an \textbf{optimization-based neural-network verifier} that computes certified bounds on classification margins under adversarial input perturbations.}
       \resumeItem{Selected influential neuron pairs to control solver cost and benchmarked \textbf{verification runtime and certified accuracy} against $\alpha$-$\beta$-CROWN on MNIST and CIFAR-10.}
     \resumeItemListEnd
 
@@ -253,7 +253,7 @@
   \small{\item{
     \textbf{Languages}{: Python, TypeScript, JavaScript, Java, SQL, HTML/CSS} \\
     \textbf{Machine Learning}{: PyTorch, Hugging Face Transformers, TensorFlow, Keras, BERT/DistilBERT, LSTMs, CNNs, ResNets, model evaluation} \\
-    \textbf{AI Safety \& Security}{: adversarial evaluation, PGD attacks, certified robustness, threat modeling, differential privacy, neural-network verification, empirical and certified evaluation} \\
+    \textbf{AI Safety \& Security}{: adversarial attacks and red-teaming methods, PGD, threat modeling, defense evaluation, certified robustness, differential privacy, neural-network verification} \\
     \textbf{Optimization}{: CROWN, Dual-CROWN, alpha-beta-CROWN, LP/SOCP relaxations} \\
     \textbf{Backend \& Systems}{: gRPC, Protocol Buffers, RabbitMQ, Node.js, Express, Spring Boot, REST APIs, microservices, PostgreSQL} \\
     \textbf{Cloud \& DevOps}{: Git, AWS, Docker, Kubernetes, Jenkins, Ansible, Azure, Google Cloud, UrbanCode Deploy} \\
