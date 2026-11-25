@@ -99,7 +99,7 @@
 
 %-----------RESEARCH PROFILE-----------
 \section{Professional Profile}
-\small{Machine learning researcher and software engineer with a 2026 MASc specializing in \textbf{adversarial robustness, neural-network verification, and threat-driven model evaluation}. Developed novel learning objectives, optimization-based verifiers, and reproducible experimental pipelines in \textbf{Python and PyTorch}, supported by research publications and open-source implementations. Experience spans transformer-based question answering and distributed, event-driven applications; currently exploring \textbf{Qwen and linear programming relaxations for LLM robustness}. Interested in verifying the reliability of \textbf{untrusted ML training and inference} through rigorous evaluation and efficient verification systems.}
+\small{Machine learning researcher and software engineer with a 2026 MASc and over two years of research experience in \textbf{deep learning, responsible AI, and adversarial robustness}. Developed novel training objectives, optimization-based verifiers, and reproducible experimental pipelines in \textbf{Python, PyTorch, and TensorFlow}, supported by peer-reviewed publications and open-source implementations. Current research explores GPU-accelerated verification for LLMs, including Qwen, and safety in multi-agent ecosystems. Combines academic research with software engineering experience in financial services and distributed applications.}
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -123,7 +123,7 @@
       \resumeItem{Developed, debugged, and maintained \textbf{Python research pipelines} for model training, attack generation, and evaluation using PyTorch and TensorFlow across MNIST, CIFAR-10, and Tiny ImageNet.}
       \resumeItem{Developed \textbf{CEAR}, a peer-reviewed ensemble defense combining Gaussian augmentation, knowledge distillation, and randomized smoothing to improve certified adversarial robustness.}
       \resumeItem{Defined bounded-perturbation \textbf{adversarial threat models} and evaluated model failure modes, comparing empirical attack outcomes with formal robustness certificates and established baselines.}
-      \resumeItem{Benchmarked \textbf{verification and inference runtime, attack outcomes, and robustness} against established baselines, documenting trade-offs between reliability, computational cost, and certificate strength.}
+      \resumeItem{Benchmarked \textbf{GPU-based training, verification runtime, and model robustness} against established baselines, analyzing accuracy, reliability, and computational trade-offs.}
     \resumeItemListEnd
 
   \resumeSubheading
@@ -227,7 +227,15 @@
     {Python, PyTorch, CVXPY}
     \resumeItemListStart
       \resumeItem{Co-developed a verifier that loads a trained classifier and bounds how much a competing class can outscore the correct class when inputs are perturbed.}
-      \resumeItem{Selected influential neuron pairs to control solver cost and benchmarked \textbf{verification runtime and certified accuracy} against $\alpha$-$\beta$-CROWN on MNIST and CIFAR-10.}
+      \resumeItem{Benchmarked sparse relaxations against $\alpha$-$\beta$-CROWN; currently developing a \textbf{GPU-accelerated SOCP solver} to improve scalability toward LLM verification.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Co-Evolution in AI Agent Ecosystems}}
+    {Research in progress}
+    \resumeItemListStart
+      \resumeItem{Co-authoring a survey of \textbf{LLM-based agents and multi-agent reinforcement learning}, examining peer learning, shared experience, adaptive routing, and collective behavior.}
+      \resumeItem{Investigating ecosystem-level safety, correlated failures, and evaluation methods, including formal bounds on joint-release risk and finite-horizon safety.}
     \resumeItemListEnd
 
   \resumeProjectHeading
@@ -252,7 +260,7 @@
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
     \textbf{Languages}{: Python, TypeScript, JavaScript, Java, SQL, HTML/CSS} \\
-    \textbf{Machine Learning}{: PyTorch, Hugging Face Transformers, TensorFlow, Keras, BERT/DistilBERT, LSTMs, CNNs, ResNets, model evaluation} \\
+    \textbf{Machine Learning}{: PyTorch, Hugging Face Transformers, TensorFlow, Keras, BERT/DistilBERT, Qwen (ongoing research), LSTMs, CNNs, ResNets, GPU training, model evaluation} \\
     \textbf{AI Safety \& Security}{: adversarial evaluation, PGD attacks, certified robustness, threat modeling, differential privacy, neural-network verification, empirical and certified evaluation} \\
     \textbf{Optimization}{: CROWN, Dual-CROWN, alpha-beta-CROWN, LP/SOCP relaxations} \\
     \textbf{Backend \& Systems}{: gRPC, Protocol Buffers, RabbitMQ, Node.js, Express, Spring Boot, REST APIs, microservices, PostgreSQL} \\
